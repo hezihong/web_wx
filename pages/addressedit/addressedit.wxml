@@ -1,0 +1,18 @@
+<!--pages/addressedit/addressedit.wxml-->
+
+ <view class="page-section">
+    <text class="span">姓名：</text>   
+    <input class="input" maxlength="10" bindinput="setName" placeholder="{{name}}" />      
+</view>
+ <view class="page-section">
+    <text class="span">电话：</text>   
+    <input class="input"  bindinput="setTel" placeholder="{{tel}}" />      
+</view>
+ <view class="page-section">
+    <text class="span">地址：</text>   
+    <input class="input" bindinput="setAddress"  placeholder="{{address}}" />      
+</view>
+
+<view class="bottomBtn">
+  <button class="addBtn" bindtap="editAddress">确认修改</button>
+</view>

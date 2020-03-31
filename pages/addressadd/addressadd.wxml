@@ -1,0 +1,17 @@
+<!--pages/addressadd/addressadd.wxml-->
+ <view class="page-section">
+    <text class="span">姓名：</text>   
+    <input class="input" maxlength="10" bindinput="setName" placeholder="请输入姓名" />      
+</view>
+ <view class="page-section">
+    <text class="span">电话：</text>   
+    <input class="input"  bindinput="setTel" placeholder="请输入电话" />      
+</view>
+ <view class="page-section">
+    <text class="span">地址：</text>   
+    <input class="input" bindinput="setAddress"  placeholder="请输入地址" />      
+</view>
+
+<view class="bottomBtn">
+  <button class="addBtn" bindtap="addAddress">确认添加</button>
+</view>

@@ -1,0 +1,61 @@
+<!--index.wxml-->
+<!-- 轮播图 -->
+<view>
+    <swiper indicator-dots="{{indicatorDots}}" indicator-color="red" autoplay="true" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{goods[0].goodsImgs}}" wx:key="*this">
+            <swiper-item>
+                <view>
+                    <image src="{{item}}"></image>
+                </view>
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+<!-- 轮播图 end -->
+
+<!-- 商品详情 -->
+<view class="goods_info_top">
+    <view class="goods_title" >
+        {{goods[0].goodsName}}
+        <view class="goods_collect_btn" hidden="{{collectionflag}}" bindtap="collectBtn">
+            <image src="../../image/icon-aixin1.png"></image>
+            <text>未收藏</text>
+        </view>
+        <view class="goods_collect_btn" wx:if="{{collectionflag}}" bindtap="collectBtn">
+            <image src="../../image/icon-aixin.png"></image>
+            <text>已收藏</text>
+        </view>
+    </view>
+    <view class="goods_price">
+        <text>￥{{goods[0].goodsPrice}}</text>
+        <text class="goods_old_price">￥{{goods[0].goodsPriceOld}}</text>
+    </view>
+</view>
+
+<view class="content">
+    <view class="title">商品详情</view>
+    <image mode="widthFix" src="../../image/long1.jpg"></image>
+    <image mode="widthFix" src="../../image/long2.jpg"></image>
+    <image mode="widthFix" src="../../image/long3.jpg"></image>
+</view>
+
+
+<view class="goods_bottom_btn">
+    <view>
+        <view class="btn dv1" bindtap="getCart">
+            <view class="box">
+                <image src="../../image/car.png"></image>
+                <text class="goods_num">{{num}}</text>
+            </view>
+        </view>
+        <view class="btn dv2" bindtap="getIndex">
+            首页
+        </view>
+        <view class="btn dv3" bindtap="getCarNum">
+            加入购物车
+        </view>
+        <view class="btn dv4">
+            前往付款
+        </view>
+    </view>
+</view> 

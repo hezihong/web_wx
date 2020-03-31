@@ -1,0 +1,28 @@
+<view class="personal_info">
+    <view class="photo_wrap">
+        <image src="{{userInfo.avatarUrl}}"></image>
+    </view>
+    <view class="nickname">
+        {{userInfo.nickName}}
+    </view>
+</view>
+<button open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+<view class="ul">
+    <view class="li" bindtap="getCollect">
+        我的收藏
+        <image src="../../image/icon-arrow.png"></image>
+    </view>
+    <view class="li"  bindtap="getAddress">
+        我的地址
+        <image src="../../image/icon-arrow.png"></image>
+    </view>
+    <view class="li" bindtap="getOrder">
+        我的订单
+        <image src="../../image/icon-arrow.png"></image>
+    </view>
+    <view class="li">
+        设置
+        <image src="../../image/icon-arrow.png"></image>
+    </view>
+</view>
+

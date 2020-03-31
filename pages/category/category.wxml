@@ -1,0 +1,69 @@
+<scroll-view scroll-y="true" class="categoryitem" style="height:{{scrollHeigth}}px;">
+  <view class="item" style="min-height:{{scrollHeigth}}px;">
+    <view wx:for="{{categoryitem}}" data-id="{{index}}" wx:key="index" bindtap="itemclick" class="{{conId == item.id ?'con':''}}">
+      {{item.iconText}}
+    </view>
+  </view>
+</scroll-view>
+
+<scroll-view scroll-y="true" class="contentItem" style="height:{{scrollHeigth}}px">
+  <view class="content" style="min-height:{{scrollHeigth}}px">
+    <view class="top_title">
+      商品列表
+    </view>
+    <view class="right_item clearfix">
+      <navigator url="/pages/details/details?id={{content[conId].id}}" hover-class="none">
+        <view class="rightBox">
+          <view class="imgBox">
+            <image mode="widthFix" src="{{content[conId].goodsImage}}"></image>
+          </view>
+          <view class="txt">
+            <text>{{content[conId].goodsName}}</text>
+          </view>
+        </view>
+      </navigator>
+
+      <navigator url="/pages/details/details?id={{content[conId].id}}" hover-class="none">
+        <view class="rightBox">
+          <view class="imgBox">
+            <image mode="widthFix" src="{{content[conId].goodsImage}}"></image>
+          </view>
+          <view class="txt">
+            <text>{{content[conId].goodsName}}</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="/pages/details/details?id={{content[conId].id}}" hover-class="none">
+        <view class="rightBox">
+          <view class="imgBox">
+            <image mode="widthFix" src="{{content[conId].goodsImage}}"></image>
+          </view>
+          <view class="txt">
+            <text>{{content[conId].goodsName}}</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="/pages/details/details?id={{content[conId].id}}" hover-class="none">
+        <view class="rightBox">
+          <view class="imgBox">
+            <image mode="widthFix" src="{{content[conId].goodsImage}}"></image>
+          </view>
+          <view class="txt">
+            <text>{{content[conId].goodsName}}</text>
+          </view>
+        </view>
+      </navigator>
+      <navigator url="/pages/details/details?id={{content[conId].id}}" hover-class="none">
+        <view class="rightBox">
+          <view class="imgBox">
+            <image mode="widthFix" src="{{content[conId].goodsImage}}"></image>
+          </view>
+          <view class="txt">
+            <text>{{content[conId].goodsName}}</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+
+  </view>
+</scroll-view>

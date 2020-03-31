@@ -1,0 +1,51 @@
+/* pages/address/address.wxss */
+
+.radio {
+  position: absolute;
+  left: 5px;
+  top: 15px;
+}
+
+.address {
+  padding: 10px;
+  position: relative;
+  background: #fff;
+  margin-bottom: 10px;
+}
+
+.address image {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.pay_content {
+  margin: 0px 30px;
+}
+
+.address .dw {
+  font-size: 12px;
+}
+
+.address image.iconArrow {
+  left: auto;
+  top: 20px;
+  right: 20px;
+}
+
+.bottomBtn {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+}
+
+.bottomBtn button.addBtn {
+  width: 80%;
+  border-radius: 20px;
+}
+

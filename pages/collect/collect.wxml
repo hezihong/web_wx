@@ -1,0 +1,59 @@
+<!--pages/collect/collect.wxml-->
+<!-- 商品列表 -->
+
+<view class="goods_list" wx:for="{{collectList}}" wx:key="*this">
+  <view class="left">
+    <navigator url="/pages/details/details?id={{item.id}}" hover-class="none">
+    <image src="{{item.carImage}}"></image>
+    </navigator>
+  </view>
+  <view class="right">
+    <view class="goods_name">
+      <text>{{item.carName}}</text>
+    </view>
+    <view class="goods_price">
+      <text>￥{{item.carPrice}}</text>
+    </view>
+
+    <view class="cart">
+      <image src="../../image/shanchu.png" bindtap="carDel" data-id="{{index}}"></image>
+    </view>
+  </view>
+</view>
+
+<!-- 商品列表 -->
+<!-- 猜你喜欢 -->
+<view hidden="{{collectList.length == 0 ? false : true}}">
+  <view class="emptycart">
+    <text>收藏夹为空</text>
+    <text class="walk" bindtap="walk">去逛逛</text>
+  </view>
+  <view class="common_title">
+    <text>猜你喜欢</text>
+  </view>
+  <view class="goods_list" wx:for="{{likeList}}" wx:key="*this">
+    <view class="left">
+      <image src="{{item.goodsImage}}"></image>
+    </view>
+    <view class="right">
+      <navigator url="/pages/details/details?id={{item.id}}" hover-class="none">
+        <view class="goods_name">
+          <text>{{item.goodsName}}</text>
+        </view>
+        <view class="goods_address">
+          <text>{{item.goodsAddress}}</text>
+        </view>
+        <view class="goods_price">
+          <text>￥{{item.goodsPrice}}</text>
+        </view>
+        <view class="cart">
+          <image src="../../image/car.png"></image>
+        </view>
+      </navigator>
+    </view>
+  </view>
+</view>
+
+
+
+<!-- 猜你喜欢 end-->

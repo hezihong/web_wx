@@ -1,0 +1,110 @@
+/* pages/details/details.wxss */
+.goods_info_top{
+    padding:10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #E5E5E5;
+}
+.goods_title{
+    font-size: 14px;
+    line-height: 20px;
+    height: 40px;
+    color:#5F5F5F;
+    padding-right: 70px;
+    position: relative;
+}
+.goods_collect_btn{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border-left: 1px solid #E5E5E5;
+    text-align: center;
+    font-size: 12px;
+    line-height: 14px;
+}
+.goods_collect_btn text{
+    display: block;
+    width: 40px;
+}
+.goods_collect_btn image{
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+}
+
+.goods_price{
+    font-size: 16px;
+    color:#ff0000;
+}
+.goods_old_price{
+    font-size: 12px;
+    color:#535353;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+.title{
+    font-size: 14px;
+    padding:10px;
+}
+.content{
+    margin-bottom: 60px;
+}
+.content image{
+  width: 100%;
+}
+
+.goods_bottom_btn{
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    bottom: 0px;
+    height: 50px;
+    background-color: #fff;
+    border-top: 1px solid #e5e5e5;
+}
+.goods_bottom_btn .btn{
+    width: 25%;
+    float: left;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
+}
+.goods_bottom_btn .btn .box{
+    width: 25px;
+    height: 25px;
+    margin: 10px auto 0 auto;
+    position: relative;
+}
+.goods_num{
+    position: absolute;
+    top:0px;
+    right: -6px;
+    height: 12px;
+    line-height: 12px;
+    width: 12px;
+    color: #fff;
+    background-color: #ff0000;
+    border-radius: 50%;
+}
+.goods_bottom_btn .btn image{
+    width: 25px;
+    height: 25px;
+}
+.dv2{
+    background: #FFA500;
+    color: #fff;
+}
+.dv3{
+    background: #00AAEF;
+    color: #fff;
+}
+.dv4{
+    background: #69C3AA;
+    color: #fff;
+}
+
+swiper image{
+  width: 100%;
+}

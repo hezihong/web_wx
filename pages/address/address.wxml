@@ -1,0 +1,25 @@
+<!--pages/address/address.wxml-->
+<radio-group>
+  <view class="address" wx:for='{{addressList}}' wx:key='index' >
+    <!-- <image src="../../image/icon-dw.png" class="iconAddress"></image> -->
+    <!-- <radio class="radio" checked="{{item.check}}" value="{{item.id}}"></radio> -->
+    <view class="pay_content" data-id='{{index}}' bindtap="onClick">
+      <view class="name">
+        <text>{{item.name}}</text>
+        <text>{{item.tel}}</text>
+      </view>
+      <view class="dw">
+        {{item.address}}
+      </view>
+    </view>
+    <navigator url="/pages/addressedit/addressedit?id={{index}}">
+      <image src="../../image/icon-arrow.png" class="iconArrow" data-editid='{{index}}' ></image>
+    </navigator>
+  </view>
+</radio-group>
+
+<view class="bottomBtn">
+  <button class="addBtn" bindtap="addressAdd">新增地址</button>
+</view>
+
+
